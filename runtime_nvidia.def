@@ -1,0 +1,7 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/tensorflow:21.09-tf1-py3
+
+%post
+    pip install pip install numpy'==1.16.0' tensor2tensor'==1.10.0' plac'==0.9.6' setuptools'==49.3.1' pandas'==0.24.1' scikit-learn'==0.22.1'
+    pip install git+https://github.com/JDACS4C-IMPROVE/paccmann.git
+
